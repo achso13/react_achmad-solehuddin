@@ -24,5 +24,6 @@ Pada task praktikum materi ini dilakukan pembuatan dan merge pada branch
 3. Membuat repository ketiga dengan nama featureA untuk penambahan fitur, lalu dimerge dengan branch development,
 4. Membuat repository keempat dengan nama featureB untuk penambahan fitur, lalu dimerge dengan branch development
 
-Output
+### Output
+
 ![screenshot-network](https://user-images.githubusercontent.com/59776144/155056369-683ab7f2-4a4c-4363-bca9-ab09b947cdd4.png)
