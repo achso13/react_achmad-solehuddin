@@ -57,9 +57,10 @@ Output:
 ### 2. Membuat Website Blog file2.html
 Praktikum nomor 2 membuat website blog yang terdiri dari navbar, section post dan footer dengan menggunakan CSS murni. Selain itu juga dibuat menu responsivenya dengan menggunakan hamburger menu. Untuk membuat link navbarnya digunakan list dengan flexbox.
 
-Berikut kode programnya 
+Pada pembuatan website blog file2 ini, digunakan external CSS. Berikut kode programnya.
    
 [file2.html](./praktikum/file2.html)
+[file2.css](./praktikum/file2.css)
    
 Pada tampilan website, berikut hasilnya.
    
