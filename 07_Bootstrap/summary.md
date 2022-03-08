@@ -19,18 +19,7 @@ Bootstrap terdiri dari kumpulan class-class CSS yang siap untuk dipakai di dalam
 
 ### Grid System Bootstrap
 
-Bootstrap memiliki fitur yang dapat mempermudah layouting dalam pembuatan website. Fitur tersebut adalah grid system. Grid system bisa membagi bagian website menjadi beberapa kolom. Untuk menggunakan grid system, perlu class row di dalam parent divnya. Pada child div di dalam class row bisa menggunakan class col-{viewport}-{number}. {viewport} dalam hal ini adalah ukuran layar yang akan diterapkan class tersebut, pilihannya adalah sm, md, lg dan xl. {number} dalam hal ini adalah ukuran kolomnya, dalam 1 row ukuran maksimal kolom adalah 12. Berikut contoh penggunaan grid system dalam bootstrap.
-
-``
-<div class="row">
-    <div class="col-lg-6">
-    <!-- Konten -->
-    </div>
-    <div class="col-lg-6">
-    <!-- Konten -->
-    </div>
-</div>
-``
+Bootstrap memiliki fitur yang dapat mempermudah layouting dalam pembuatan website. Fitur tersebut adalah grid system. Grid system bisa membagi bagian website menjadi beberapa kolom. Untuk menggunakan grid system, perlu class row di dalam parent divnya. Pada child div di dalam class row bisa menggunakan class col-{viewport}-{number}. {viewport} dalam hal ini adalah ukuran layar yang akan diterapkan class tersebut, pilihannya adalah sm, md, lg dan xl. {number} dalam hal ini adalah ukuran kolomnya, dalam 1 row ukuran maksimal kolom adalah 12. 
 
 ## Praktikum
 
