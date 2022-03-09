@@ -23,9 +23,9 @@ Function adalah sebuah serangkaian kode yang dapat digunakan berkali-kali. Cara 
 function contoh(param1) {
     return param1;
 }
-
 contoh(param1);
 ``
+
 Class adalah suatu prototype terhadap object yang akan dibuat. Class terdiri dari method dan attribute. Method adalah fungsi yang dapat digunakan di dalam class, sedangkan attribute adalah variabel yang membentuk suatu class. Di dalam class, terdapat juga constructor function. Constructor function merupakan suatu function yang akan otomatis berjalan ketika kita menginisialisasi atau membuat suatu object dari class. Untuk menginisialisasi object dari class dapat digunakan keyword new.
 
 Synchronous Javascript merupakan cara menjalankan kode sesuai dengan urutan kode yang telah dituliskan. Sedangkan Asynchoronous Javascript merupakan cara menjalankan kode tidak sesuai urutan melainkan dengan waktu proses. Pada asynchronous banyak keyword yang dapat digunakan, seperti Promise, async, await, then, catch dan finally.
