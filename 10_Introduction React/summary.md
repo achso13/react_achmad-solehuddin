@@ -40,9 +40,9 @@ Untuk dokumentasi mengenai react lebih lanjut dapat diakses di https://reactjs.o
 
 Pada praktikum ini melakukan perubahan kode HTML ke JS untuk dijalankan di React. Dalam project ini menggunakan react router untuk membuat linknya. Dalam praktikum ini, ada 2 page yang dibuat, yaitu home dan ContactUs. Berikut file codenya.
 
-[Home](./praktikum/introduction-react/src/components/Home/Home.js)
+[Home](./praktikum/introduction-react/src/components/Home/index.js)
 
-[Contact Us](./praktikum/introduction-react/src/components/ContactUs/ContactUs.js)
+[Contact Us](./praktikum/introduction-react/src/components/ContactUs/index.js)
 
 Berikut adalah output page tersebut yang dijalankan dengan react.
 
