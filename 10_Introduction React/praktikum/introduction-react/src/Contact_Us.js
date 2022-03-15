@@ -17,7 +17,7 @@ export default function Contact_Us() {
           <h3>Contact Us</h3>
           <form>
             <div className="form-group rincian-form">
-              <label for="nama" className="required">
+              <label htmlFor="nama" className="required">
                 Full Name
               </label>
               <input
@@ -28,7 +28,7 @@ export default function Contact_Us() {
               />
             </div>
             <div className="form-group rincian-form">
-              <label for="alamatemail" className="required">
+              <label htmlFor="alamatemail" className="required">
                 Email Address
               </label>
               <input
@@ -40,7 +40,7 @@ export default function Contact_Us() {
               />
             </div>
             <div className="form-group rincian-form">
-              <label for="telepon" className="required">
+              <label htmlFor="telepon" className="required">
                 Phone Number
               </label>
               <input
@@ -52,12 +52,12 @@ export default function Contact_Us() {
               />
             </div>
             <div className="form-group rincian-form">
-              <label for="kewarganegaraan">Nationality</label>
+              <label htmlFor="kewarganegaraan">Nationality</label>
               <select className="form-control">
                 <option>Selected</option>
               </select>
               <div className="form-group">
-                <label for="message">Message:</label>
+                <label htmlFor="message">Message:</label>
                 <textarea
                   className="form-control"
                   rows="5"
