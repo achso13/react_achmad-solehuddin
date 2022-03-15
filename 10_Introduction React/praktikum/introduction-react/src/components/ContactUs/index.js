@@ -1,9 +1,7 @@
-import "./asset/css/bootstrap.min.css";
-import "./asset/css/main.css";
-import "./asset/css/form.css";
-import logoAlta from "./asset/img/logo-ALTA-v2@2x.png";
+import "../../asset/css/form.css";
+import logoAlta from "../../asset/img/logo-ALTA-v2@2x.png";
 
-export default function Contact_Us() {
+export default function ContactUs() {
   return (
     <div className="container-fluid">
       <div className="row d-flex align-items-center ">

@@ -1,18 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Home from "./Home";
-import Contact_Us from "./Contact_Us";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/contact" element={<Contact_Us />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

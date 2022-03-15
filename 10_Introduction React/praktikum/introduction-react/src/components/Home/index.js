@@ -1,7 +1,5 @@
-import logoAtas from "./asset/img/logo-ALTA@2x.png";
-import fotoProfil from "./asset/img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg";
-import "./asset/css/bootstrap.min.css";
-import "./asset/css/main.css";
+import logoAtas from "../../asset/img/logo-ALTA@2x.png";
+import fotoProfil from "../../asset/img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Home() {
