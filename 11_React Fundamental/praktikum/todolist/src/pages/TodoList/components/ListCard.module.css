@@ -1,0 +1,14 @@
+.list {
+  margin: 32px 0 52px;
+}
+
+.list > span {
+  border: 2px solid black;
+  border-radius: 28px;
+  box-sizing: border-box;
+  padding: 16px 12px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
