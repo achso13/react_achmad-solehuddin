@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.image {
+  margin: 12px 0;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: #b91b20;
+}
+
+.description {
+  font-weight: 500;
+  color: grey;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #b91b20;
+  padding: 12px 24px;
+  margin: 12px;
+  border-radius: 12px;
+  color: rgb(224, 223, 223);
+}
+
+.button:hover {
+  background-color: #fc242c;
+}

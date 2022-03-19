@@ -1,0 +1,48 @@
+.container {
+  background-color: #b91b20;
+  height: 100vh;
+  padding: 80px 20px;
+  position: fixed;
+  top: 0;
+  left: -340px;
+  width: 300px;
+  transition: all 0.3s;
+}
+
+.container.active {
+  left: 0px;
+}
+
+.sidebarMenu {
+  display: flex;
+  height: 100%;
+  justify-content: left;
+  flex-direction: column;
+  padding: 0;
+}
+
+.sidebarLink {
+  list-style: none;
+  margin: 16px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.sidebarLink:hover {
+  background-color: #ff131a;
+}
+
+.sidebarLink a {
+  padding: 16px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.sidebarLink a svg {
+  font-size: 1.5rem;
+  margin-right: 28px;
+}

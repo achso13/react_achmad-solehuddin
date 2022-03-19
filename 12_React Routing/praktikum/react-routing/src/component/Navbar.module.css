@@ -1,0 +1,59 @@
+.container {
+  height: 80px;
+  background-color: #fff;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 3px 0px 17px 2px rgba(173, 173, 173, 0.49);
+  -webkit-box-shadow: 3px 0px 17px 2px rgba(173, 173, 173, 0.49);
+  -moz-box-shadow: 3px 0px 17px 2px rgba(173, 173, 173, 0.49);
+}
+
+.burgerMenu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 32px;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 0;
+  width: 32px;
+  z-index: 20;
+}
+
+.burgerMenu span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: gray;
+  transition: all 0.3s;
+}
+
+.burgerMenu.active span {
+  background-color: white;
+}
+
+.burgerMenu span:nth-child(1) {
+  transform-origin: top right;
+}
+
+.burgerMenu span:nth-child(3) {
+  transform-origin: bottom right;
+}
+
+.burgerMenu.active > span:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+.burgerMenu.active > span:nth-child(2) {
+  transform: scaleY(0);
+}
+
+.burgerMenu.active > span:nth-child(3) {
+  transform: rotate(45deg);
+}
