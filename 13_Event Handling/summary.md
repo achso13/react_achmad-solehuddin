@@ -47,4 +47,5 @@ Aplikasi ini bisa digunakan untuk:
 4. Mengeluarkan alert apabila form yang disubmit kosong.
 
 Berikut ini adalah alertnya.
+
 ![Alert](./screenshots/alert.png)
