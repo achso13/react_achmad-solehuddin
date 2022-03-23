@@ -5,30 +5,19 @@ export default class InputForm extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      id: null,
-      title: null,
-      completed: null,
-    };
-
-    this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleInputChange(e) {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
   }
 
   handleSubmit(e) {
     e.preventDefault();
 
-    if (this.state.title) {
+    let formData = new FormData(e.target);
+
+    if (formData.get("title")) {
       const list = this.props.data;
       const inputData = {
         id: Number(list[list.length - 1].id) + 1,
-        title: this.state.title,
+        title: formData.get("title"),
         completed: false,
       };
 
@@ -36,12 +25,6 @@ export default class InputForm extends React.Component {
     } else {
       alert("Form tidak boleh kosong!");
     }
-
-    this.setState({
-      id: null,
-      title: null,
-      completed: null,
-    });
   }
 
   render() {
@@ -52,7 +35,6 @@ export default class InputForm extends React.Component {
           className={styles.input}
           name="title"
           placeholder="Add todo..."
-          onChange={this.handleInputChange}
         />
         <button type="submit" className={styles.button}>
           Submit

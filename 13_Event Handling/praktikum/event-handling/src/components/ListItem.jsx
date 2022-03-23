@@ -8,12 +8,6 @@ export default class ListItem extends React.Component {
     this.state = {
       data: this.props.item,
     };
-
-    this.handleChecked = this.handleChecked.bind(this);
-  }
-
-  handleChecked(index) {
-    this.props.updateTodo(index);
   }
 
   render() {
@@ -22,7 +16,7 @@ export default class ListItem extends React.Component {
         <input
           type="checkbox"
           checked={this.state.data.completed}
-          onChange={() => this.handleChecked(this.props.index)}
+          onChange={() => this.props.updateTodo(this.props.index)}
         />
         <span className={this.state.data.completed ? styles.active : ""}>
           {this.state.data.title}
