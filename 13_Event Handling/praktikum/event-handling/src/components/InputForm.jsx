@@ -6,9 +6,9 @@ export default class InputForm extends React.Component {
     super(props);
 
     this.state = {
-      id: "",
-      title: "",
-      completed: "",
+      id: null,
+      title: null,
+      completed: null,
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -38,9 +38,9 @@ export default class InputForm extends React.Component {
     }
 
     this.setState({
-      id: "",
-      title: "",
-      completed: "",
+      id: null,
+      title: null,
+      completed: null,
     });
   }
 

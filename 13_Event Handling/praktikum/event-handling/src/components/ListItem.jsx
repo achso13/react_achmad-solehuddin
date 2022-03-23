@@ -7,16 +7,13 @@ export default class ListItem extends React.Component {
 
     this.state = {
       data: this.props.item,
-      isChecked: this.props.item.completed,
     };
 
     this.handleChecked = this.handleChecked.bind(this);
   }
 
-  handleChecked(id) {
-    this.setState({
-      isChecked: !this.state.isChecked,
-    });
+  handleChecked(index) {
+    this.props.updateTodo(index);
   }
 
   render() {
@@ -24,10 +21,10 @@ export default class ListItem extends React.Component {
       <li className={styles.todoItem}>
         <input
           type="checkbox"
-          checked={this.state.isChecked}
-          onChange={() => this.handleChecked(this.state.data.id)}
+          checked={this.state.data.completed}
+          onChange={() => this.handleChecked(this.props.index)}
         />
-        <span className={this.state.isChecked ? styles.active : ""}>
+        <span className={this.state.data.completed ? styles.active : ""}>
           {this.state.data.title}
         </span>
         <button onClick={() => this.props.deleteTodo(this.state.data.id)}>
