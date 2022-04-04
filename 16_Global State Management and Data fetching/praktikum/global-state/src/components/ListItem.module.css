@@ -1,0 +1,36 @@
+.todoList {
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+  width: 350px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  padding: 12px 0;
+  border-bottom: 1px solid lightgray;
+  list-style: none;
+}
+
+.todoItem button {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.todoItem span {
+  margin: 0 12px;
+}
+
+.active {
+  font-style: italic;
+  opacity: 70%;
+  text-decoration: line-through;
+}
