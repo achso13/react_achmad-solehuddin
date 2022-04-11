@@ -72,6 +72,7 @@ describe("FormCoding", () => {
   });
 
   it("should be able submit form with correct value", () => {
+    window.alert = jest.fn();
     render(<FormCoding />);
     const inputNamaElement = screen.getByLabelText(/nama/i);
     const inputEmailElement = screen.getByLabelText(/email/i);
@@ -98,15 +99,45 @@ describe("FormCoding", () => {
       target: { value: "Jago" },
     });
 
-    const buttonElement = screen.getByRole("button", { name: /reset/i });
+    const buttonElement = screen.getByText(/submit/i);
 
     fireEvent.click(buttonElement);
 
-    expect(inputNamaElement).toHaveValue("");
-    expect(inputEmailElement).toHaveValue("");
-    expect(inputHandphoneElement).toHaveValue(null);
-    expect(inputKelasElement).toHaveValue("");
-    expect(inputSuratElement).toHaveValue("");
-    expect(inputHarapanElement).toHaveValue("");
+    expect(window.alert).toHaveBeenCalledTimes(1);
+  });
+
+  it("should not be able submit form with incorrect value", () => {
+    window.alert = jest.fn();
+    render(<FormCoding />);
+    const inputNamaElement = screen.getByLabelText(/nama/i);
+    const inputEmailElement = screen.getByLabelText(/email/i);
+    const inputHandphoneElement = screen.getByLabelText(/No Handphone/i);
+    const inputPendidikanElement = screen.getByLabelText(/pendidikan/i);
+    const inputKelasElement = screen.getByLabelText(/Kelas Coding/i);
+    const file = new File(["hello"], "hello.png", { type: "image/png" });
+    const inputSuratElement = screen.getByLabelText(/Foto Surat Kesungguhan/i);
+    const inputHarapanElement = screen.getByLabelText(/Harapan/i);
+
+    fireEvent.change(inputNamaElement, {
+      target: { value: "Achmad Solehuddin 123" },
+    });
+    fireEvent.change(inputEmailElement, {
+      target: { value: "achmadsolehuddin23@gmail.com" },
+    });
+    fireEvent.change(inputHandphoneElement, {
+      target: { value: "08123456789111111" },
+    });
+    fireEvent.change(inputPendidikanElement, { target: { value: "IT" } });
+    fireEvent.change(inputKelasElement, { target: { value: "reactjs" } });
+    userEvent.upload(inputSuratElement, file);
+    fireEvent.change(inputHarapanElement, {
+      target: { value: "Jago" },
+    });
+
+    const buttonElement = screen.getByText(/submit/i);
+
+    fireEvent.click(buttonElement);
+
+    expect(window.alert).toHaveBeenCalledTimes(1);
   });
 });

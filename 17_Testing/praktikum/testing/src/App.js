@@ -4,7 +4,7 @@ import FormCoding from "./components/FormCoding";
 import Search from "./components/Search";
 
 function App() {
-  return <Search />;
+  return <FormCoding />;
 }
 
 export default App;
