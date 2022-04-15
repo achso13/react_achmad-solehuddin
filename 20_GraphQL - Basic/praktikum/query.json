@@ -1,0 +1,10 @@
+{
+  "dataQuery": {
+    "queryNo6": "query MyQuery { keterangan(where: {status: {_eq: true}}) { id nilai pelajaran status anggota { id nama } } }",
+    "queryNo7": [
+      "mutation MyMutation { insert_keterangan(objects: {id_anggota: 3, nilai: 90, pelajaran: 'Sistem Informasi', status true}) { returning { id } } }",
+      "mutation MyMutation { insert_keterangan(objects: {id_anggota: 3, nilai: 55, pelajaran: 'React', status: false}) { returning { id } } }"
+    ],
+    "queryNo8": "mutation MyMutation { update_keterangan(where: {status: {_eq: false}}, _set: {status: true}) { returning { id } } }"
+  }
+}
