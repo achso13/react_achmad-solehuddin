@@ -1,0 +1,20 @@
+{
+  "firstQueryResult": {
+    "insert_keterangan": {
+      "returning": [
+        {
+          "id": 5
+        }
+      ]
+    }
+  },
+  "secondQueryResult": {
+    "insert_keterangan": {
+      "returning": [
+        {
+          "id": 6
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+# Query untuk Nomor 6
+query MyQuery {
+  keterangan(where: { status: { _eq: true } }) {
+    id
+    nilai
+    pelajaran
+    status
+    anggota {
+      id
+      nama
+    }
+  }
+}
+
+# Query untuk Nomor 7
+mutation MyMutation {
+  insert_keterangan(
+    objects: {
+      id_anggota: 3
+      nilai: 90
+      pelajaran: "Sistem Informasi"
+      status: true
+    }
+  ) {
+    returning {
+      id
+    }
+  }
+}
+
+mutation MyMutation2 {
+  insert_keterangan(
+    objects: { id_anggota: 3, nilai: 55, pelajaran: "React", status: false }
+  ) {
+    returning {
+      id
+    }
+  }
+}
+
+# Query untuk nomor 8
+mutation MyMutation3 {
+  update_keterangan(where: { status: { _eq: false } }, _set: { status: true }) {
+    returning {
+      id
+    }
+  }
+}

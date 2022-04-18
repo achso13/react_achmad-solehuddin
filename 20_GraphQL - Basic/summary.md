@@ -68,7 +68,7 @@ Pada praktikum ini membuat database dengan hasura dan heroku. Dengan menggunakan
 
 Query filenya dapat dilihat di
 
-[query.json](./praktikum/query.json)
+[query.graphql](./praktikum/query.graphql)
 
 `Catatan: dikarenakan pada soal diperintahkan querynya disimpan di file .json, namun querynya jika disimpan di json akan muncul error, maka querynya disimpan dalam bentuk string di jsonnya.`
 
@@ -90,13 +90,15 @@ Selain itu, dilakukan 3 query, yaitu
 
 #### 1. Query memanggil siswa dengan status true (No 6)
 
+[hasilNo6.json](./praktikum/hasilNo6.json)
 ![no6.png](./screenshots/no6.png)
 
 #### 2. Query insert data dengan mutation (No 7)
 
-![no7-1.png](./screenshots/no7-1.png)
-![no7-2.png](./screenshots/no7-2.png)
+[hasilNo7.json](./praktikum/hasilNo7.json)
+![no7.png](./screenshots/no7-1.png)
 
 #### 3. Query update dengan mutation terhadap data yang false menjadi true (No 8)
 
+[hasilNo8.json](./praktikum/hasilNo8.json)
 ![no8.png](./screenshots/no8.png)

@@ -1,0 +1,17 @@
+{
+  "data": {
+    "update_keterangan": {
+      "returning": [
+        {
+          "id": 4
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 2
+        }
+      ]
+    }
+  }
+}
