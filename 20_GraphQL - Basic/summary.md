@@ -1,4 +1,4 @@
-# 19 Introduction Algorithm
+# 20 GraphQL - Basic
 
 ## Resume
 
